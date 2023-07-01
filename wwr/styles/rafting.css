@@ -21,10 +21,19 @@
 
 
   header {
-    padding: 20px;
+  	margin: 1rem auto;
+	  display: grid;
+	  grid-template-columns: 120px 1fr 2fr;
+	  align-items: center;
+	  border-bottom: 1px solid #ccc;
+	  max-width: 1000px;
     background-color: var(--accent1-color);
   }
-
+  nav {
+    text-align: right;
+    font-family: var(--paragraph-font);
+  }
+  
   p {
     padding: 25px;
     color: var(--accent1-color);
@@ -36,6 +45,22 @@
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+figure {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+}
+
+footer {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1000px;
+  background-color: var(--accent1-color);
+  font-family: var(--paragraph-font);
 }
 
 footer img {
@@ -55,6 +80,8 @@ footer img {
  }
 .hero {
     position: relative;
+    max-width: 900px;
+    padding-left: 20%;
 }
 .hero img {
     display: block;
@@ -65,6 +92,7 @@ footer img {
 .hero h1 {
     position: absolute;
     width: 100%;
+    max-width: 900px;
     text-align: center;
     background-color: black;
     opacity: 0.5;
@@ -106,4 +134,58 @@ footer img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.logo {
+	margin: 0 0.25rem 0 1rem;
+	width: 100px;
+	height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  max-width: 1000px;
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+ .container h2, p {
+  margin: 0;
+}
+
+.container img {
+
+  width: 85%; 
+  height: 100%;
+  max-width: 100%;
+  margin: 0px;
 }
