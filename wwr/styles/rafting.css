@@ -80,6 +80,43 @@ footer img {
     padding: 25px;
     color: var(--primary-color);
  }
+
+ button {
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--accent1-color);
+ }
+
+form {
+  margin: 0 auto;
+  width: 650px;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color:  rgba(253, 184, 19, 0.3);
+  display: grid;
+}
+
+fieldset {
+  display: grid;
+  /*grid-gap: .5rem;*/
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  font-family: var(--paragraph-font);
+}
+
+form label {
+  font-family: var(--heading-font);
+}
 .hero {
     position: relative;
     max-width: 900px;
@@ -190,4 +227,47 @@ footer img {
   height: 100%;
   max-width: 100%;
   margin: 0px;
+  
+}
+
+.content {
+  display: grid;
+  place-items: center;
+  background-color: rgba(253, 184, 19, 0.3);
+  grid-template-columns: 1fr 1fr, 1fr;
+  grid-gap: 10px;
+  margin: 1rem auto;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 900px;
+
+}
+
+.address {
+  grid-column: 1;
+
+}
+
+.address p {
+  color:var(--primary-color);
+}
+
+.employees {
+  grid-column: 3;
+ 
+}
+
+.employees img {
+  width: 100px;
+  height: 100px;
+}
+
+.map 
+  {
+    grid-column: 2;
+  }
+
+  .form-item {
+    display: grid;
+    align-items: center;
 }
